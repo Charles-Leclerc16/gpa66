@@ -31,7 +31,7 @@ public class GpaController {
         for (Student s : studentList){
             String sid = s.getId();
             QueryWrapper<Score> queryWrapper = new QueryWrapper<>();
-            queryWrapper.eq("sic",sid);
+            queryWrapper.eq("sid",sid);
             List<Score> scoreList = scoreMapper.selectList(queryWrapper);
 
             double sumPoint = 0;
@@ -57,5 +57,4 @@ public class GpaController {
         }
         return gson.toJson(studentList);
     }
-
 }

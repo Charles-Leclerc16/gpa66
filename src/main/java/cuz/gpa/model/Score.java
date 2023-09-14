@@ -10,4 +10,5 @@ public class Score {
     private String sid;
     private String cid;
     private double score;
+    private double idx;
 }
